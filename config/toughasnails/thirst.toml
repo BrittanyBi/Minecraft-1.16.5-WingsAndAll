@@ -1,0 +1,431 @@
+
+#Please be advised that certain thirst-related options are world-specific and are located in <Path to your world folder>/serverconfig/toughasnails-server.toml.
+[general]
+	#The threshold at which exhaustion causes a reduction in hydration and the thirst bar.
+	#Range: 0.0 ~ 1.7976931348623157E308
+	exhaustion_threshold = 8.0
+
+[drink_options]
+	#Hydration restored from drinking with hands.
+	#Range: 0.0 ~ 1.7976931348623157E308
+	hand_drinking_hydration = 0.1
+	#Thirst restored from drinking with hands.
+	#Range: 0 ~ 20
+	hand_drinking_thirst = 1
+
+	#Effects of drinks from Vanilla, Tough As Nails and other mods.
+	[[drink_options.drink_entries]]
+		poison_chance = 0.25
+		thirst = 2
+		hydration = 0.2
+		location = "minecraft:potion"
+
+	[[drink_options.drink_entries]]
+		poison_chance = 0.75
+		thirst = 1
+		hydration = 0.1
+		location = "toughasnails:dirty_water_bottle"
+
+	[[drink_options.drink_entries]]
+		poison_chance = 0.75
+		thirst = 1
+		hydration = 0.1
+		location = "toughasnails:dirty_water_canteen"
+
+	[[drink_options.drink_entries]]
+		poison_chance = 0.0
+		thirst = 3
+		hydration = 0.4
+		location = "toughasnails:purified_water_bottle"
+
+	[[drink_options.drink_entries]]
+		poison_chance = 0.0
+		thirst = 3
+		hydration = 0.4
+		location = "toughasnails:purified_water_canteen"
+
+	[[drink_options.drink_entries]]
+		poison_chance = 0.25
+		thirst = 2
+		hydration = 0.2
+		location = "toughasnails:water_canteen"
+
+[biome_options]
+
+	#The types of water found in biomes from Vanilla and other mods.
+	[[biome_options.biome_water_entries]]
+		location = "minecraft:swamp"
+		type = "DIRTY"
+
+	[[biome_options.biome_water_entries]]
+		location = "minecraft:swamp_hills"
+		type = "DIRTY"
+
+	[[biome_options.biome_water_entries]]
+		location = "minecraft:mushroom_fields"
+		type = "DIRTY"
+
+	[[biome_options.biome_water_entries]]
+		location = "minecraft:mushroom_field_shore"
+		type = "DIRTY"
+
+	[[biome_options.biome_water_entries]]
+		location = "biomesoplenty:bayou"
+		type = "DIRTY"
+
+	[[biome_options.biome_water_entries]]
+		location = "biomesoplenty:bayou_mangrove"
+		type = "DIRTY"
+
+	[[biome_options.biome_water_entries]]
+		location = "biomesoplenty:dead_swamp"
+		type = "DIRTY"
+
+	[[biome_options.biome_water_entries]]
+		location = "biomesoplenty:deep_bayou"
+		type = "DIRTY"
+
+	[[biome_options.biome_water_entries]]
+		location = "biomesoplenty:fungal_field"
+		type = "DIRTY"
+
+	[[biome_options.biome_water_entries]]
+		location = "biomesoplenty:fungal_jungle"
+		type = "DIRTY"
+
+	[[biome_options.biome_water_entries]]
+		location = "biomesoplenty:highland_moor"
+		type = "DIRTY"
+
+	[[biome_options.biome_water_entries]]
+		location = "biomesoplenty:jade_cliffs"
+		type = "DIRTY"
+
+	[[biome_options.biome_water_entries]]
+		location = "biomesoplenty:jade_grassland"
+		type = "DIRTY"
+
+	[[biome_options.biome_water_entries]]
+		location = "biomesoplenty:ominous_mire"
+		type = "DIRTY"
+
+	[[biome_options.biome_water_entries]]
+		location = "biomesoplenty:ominous_woods"
+		type = "DIRTY"
+
+	[[biome_options.biome_water_entries]]
+		location = "biomesoplenty:overgrown_fungal_jungle"
+		type = "DIRTY"
+
+	[[biome_options.biome_water_entries]]
+		location = "biomesoplenty:rainforest"
+		type = "DIRTY"
+
+	[[biome_options.biome_water_entries]]
+		location = "biomesoplenty:rainforest_cliffs"
+		type = "DIRTY"
+
+	[[biome_options.biome_water_entries]]
+		location = "biomesoplenty:rainforest_floodplain"
+		type = "DIRTY"
+
+	[[biome_options.biome_water_entries]]
+		location = "biomesoplenty:silkglade"
+		type = "DIRTY"
+
+	[[biome_options.biome_water_entries]]
+		location = "biomesoplenty:silkglade_nest"
+		type = "DIRTY"
+
+	[[biome_options.biome_water_entries]]
+		location = "biomesoplenty:tundra_bog"
+		type = "DIRTY"
+
+	[[biome_options.biome_water_entries]]
+		location = "biomesoplenty:volcanic_plains"
+		type = "DIRTY"
+
+	[[biome_options.biome_water_entries]]
+		location = "biomesoplenty:volcano"
+		type = "DIRTY"
+
+	[[biome_options.biome_water_entries]]
+		location = "biomesoplenty:wasteland"
+		type = "DIRTY"
+
+	[[biome_options.biome_water_entries]]
+		location = "biomesoplenty:wetland"
+		type = "DIRTY"
+
+	[[biome_options.biome_water_entries]]
+		location = "biomesoplenty:wetland_marsh"
+		type = "DIRTY"
+
+	[[biome_options.biome_water_entries]]
+		location = "biomesoplenty:wooded_wasteland"
+		type = "DIRTY"
+
+	[[biome_options.biome_water_entries]]
+		location = "biomesoplenty:alps"
+		type = "PURIFIED"
+
+	[[biome_options.biome_water_entries]]
+		location = "biomesoplenty:rainbow_hills"
+		type = "PURIFIED"
+
+	[[biome_options.biome_water_entries]]
+		location = "byg:zelkova_forest"
+		type = "DIRTY"
+
+	[[biome_options.biome_water_entries]]
+		location = "byg:allium_fields"
+		type = "DIRTY"
+
+	[[biome_options.biome_water_entries]]
+		location = "byg:jacaranda_forest"
+		type = "DIRTY"
+
+	[[biome_options.biome_water_entries]]
+		location = "byg:meadow"
+		type = "DIRTY"
+
+	[[biome_options.biome_water_entries]]
+		location = "byg:seasonal_forest"
+		type = "DIRTY"
+
+	[[biome_options.biome_water_entries]]
+		location = "byg:twilight_valley"
+		type = "DIRTY"
+
+	[[biome_options.biome_water_entries]]
+		location = "byg:evergreen_taiga"
+		type = "DIRTY"
+
+	[[biome_options.biome_water_entries]]
+		location = "byg:dunes"
+		type = "DIRTY"
+
+	[[biome_options.biome_water_entries]]
+		location = "byg:grassland_plateau"
+		type = "DIRTY"
+
+	[[biome_options.biome_water_entries]]
+		location = "byg:bluff_steeps"
+		type = "DIRTY"
+
+	[[biome_options.biome_water_entries]]
+		location = "byg:alps"
+		type = "PURIFIED"
+
+	[[biome_options.biome_water_entries]]
+		location = "byg:red_desert"
+		type = "DIRTY"
+
+	[[biome_options.biome_water_entries]]
+		location = "byg:snowy_blue_taiga"
+		type = "DIRTY"
+
+	[[biome_options.biome_water_entries]]
+		location = "byg:tropical_fungal_forest"
+		type = "DIRTY"
+
+	[[biome_options.biome_water_entries]]
+		location = "byg:aspen_forest"
+		type = "DIRTY"
+
+	[[biome_options.biome_water_entries]]
+		location = "byg:dead_sea"
+		type = "DIRTY"
+
+	[[biome_options.biome_water_entries]]
+		location = "byg:dover_mountains"
+		type = "DIRTY"
+
+	[[biome_options.biome_water_entries]]
+		location = "byg:ancient_forest"
+		type = "DIRTY"
+
+	[[biome_options.biome_water_entries]]
+		location = "byg:sierra_valley"
+		type = "DIRTY"
+
+	[[biome_options.biome_water_entries]]
+		location = "byg:seasonal_birch_forest"
+		type = "DIRTY"
+
+	[[biome_options.biome_water_entries]]
+		location = "byg:guiana_shield"
+		type = "DIRTY"
+
+	[[biome_options.biome_water_entries]]
+		location = "byg:enchanted_forest"
+		type = "PURIFIED"
+
+	[[biome_options.biome_water_entries]]
+		location = "byg:seasonal_taiga"
+		type = "DIRTY"
+
+	[[biome_options.biome_water_entries]]
+		location = "weeping_witch_forest"
+		type = "DIRTY"
+
+	[[biome_options.biome_water_entries]]
+		location = "byg:mojave_desert"
+		type = "DIRTY"
+
+	[[biome_options.biome_water_entries]]
+		location = "byg:cherry_blossom_forest"
+		type = "DIRTY"
+
+	[[biome_options.biome_water_entries]]
+		location = "byg:canyons"
+		type = "DIRTY"
+
+	[[biome_options.biome_water_entries]]
+		location = "byg:glowshroom_bayou"
+		type = "DIRTY"
+
+	[[biome_options.biome_water_entries]]
+		location = "byg:autumnal_valley"
+		type = "DIRTY"
+
+	[[biome_options.biome_water_entries]]
+		location = "byg:mangrove_marshes"
+		type = "DIRTY"
+
+	[[biome_options.biome_water_entries]]
+		location = "byg:seasonal_deciduous_forest"
+		type = "DIRTY"
+
+	[[biome_options.biome_water_entries]]
+		location = "byg:amaranth_fields"
+		type = "DIRTY"
+
+	[[biome_options.biome_water_entries]]
+		location = "byg:the_black_forest"
+		type = "DIRTY"
+
+	[[biome_options.biome_water_entries]]
+		location = "byg:snowy_deciduous_forest"
+		type = "DIRTY"
+
+	[[biome_options.biome_water_entries]]
+		location = "byg:stone_forest"
+		type = "DIRTY"
+
+	[[biome_options.biome_water_entries]]
+		location = "byg:crag_gardens"
+		type = "DIRTY"
+
+	[[biome_options.biome_water_entries]]
+		location = "byg:prairie"
+		type = "DIRTY"
+
+	[[biome_options.biome_water_entries]]
+		location = "byg:snowy_coniferous_forest"
+		type = "DIRTY"
+
+	[[biome_options.biome_water_entries]]
+		location = "byg:vibrant_swamplands"
+		type = "DIRTY"
+
+	[[biome_options.biome_water_entries]]
+		location = "byg:araucaria_savanna"
+		type = "DIRTY"
+
+	[[biome_options.biome_water_entries]]
+		location = "byg:baobab_savanna"
+		type = "DIRTY"
+
+	[[biome_options.biome_water_entries]]
+		location = "byg:maple_taiga"
+		type = "DIRTY"
+
+	[[biome_options.biome_water_entries]]
+		location = "byg:lush_tundra"
+		type = "DIRTY"
+
+	[[biome_options.biome_water_entries]]
+		location = "byg:snowy_evergreen_taiga"
+		type = "DIRTY"
+
+	[[biome_options.biome_water_entries]]
+		location = "byg:bayou"
+		type = "DIRTY"
+
+	[[biome_options.biome_water_entries]]
+		location = "byg:rose_fields"
+		type = "DIRTY"
+
+	[[biome_options.biome_water_entries]]
+		location = "byg:woodlands"
+		type = "DIRTY"
+
+	[[biome_options.biome_water_entries]]
+		location = "byg:ebony_woods"
+		type = "DIRTY"
+
+	[[biome_options.biome_water_entries]]
+		location = "byg:red_rock_mountains"
+		type = "DIRTY"
+
+	[[biome_options.biome_water_entries]]
+		location = "byg:red_oak_forest"
+		type = "DIRTY"
+
+	[[biome_options.biome_water_entries]]
+		location = "byg:cypress_swamplands"
+		type = "DIRTY"
+
+	[[biome_options.biome_water_entries]]
+		location = "byg:shattered_glacier"
+		type = "DIRTY"
+
+	[[biome_options.biome_water_entries]]
+		location = "skyris_highlands"
+		type = "DIRTY"
+
+	[[biome_options.biome_water_entries]]
+		location = "byg:great_lakes"
+		type = "DIRTY"
+
+	[[biome_options.biome_water_entries]]
+		location = "byg:tropical_rainforest"
+		type = "DIRTY"
+
+	[[biome_options.biome_water_entries]]
+		location = "byg:boreal_forest"
+		type = "DIRTY"
+
+	[[biome_options.biome_water_entries]]
+		location = "byg:deciduous_forest"
+		type = "DIRTY"
+
+	[[biome_options.biome_water_entries]]
+		location = "byg:cika_woods"
+		type = "DIRTY"
+
+	[[biome_options.biome_water_entries]]
+		location = "byg:cold_swamplands"
+		type = "DIRTY"
+
+	[[biome_options.biome_water_entries]]
+		location = "byg:orchard"
+		type = "DIRTY"
+
+	[[biome_options.biome_water_entries]]
+		location = "byg:redwood_tropics"
+		type = "DIRTY"
+
+	[[biome_options.biome_water_entries]]
+		location = "byg:blue_taiga"
+		type = "DIRTY"
+
+	[[biome_options.biome_water_entries]]
+		location = "byg:shrublands"
+		type = "DIRTY"
+
+	[[biome_options.biome_water_entries]]
+		location = "byg:coniferous_forest"
+		type = "DIRTY"
+
