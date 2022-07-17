@@ -87,8 +87,8 @@
 		#The dimensions that this ore should spawn in as a list (default ["minecraft:overworld"])
 		dimensions = ["minecraft:overworld"]
 
-	#Amethyst ore generation.
-	[oregen.Amethyst_oregen]
+	#Sapphire ore generation.
+	[oregen.Sapphire_oregen]
 		#Number of veins per chunk (set to 0 to disable).
 		#Range: 0 ~ 256
 		oreChances = 4
@@ -130,6 +130,13 @@
 	[feature_spawns.barrow]
 		#List of biome types to spawn (default [SAVANNA,PLAINS], pass empty list for every biome
 		biomes = "SAVANNA,PLAINS"
+		#Which biome types this structure shouldn't spawn in (default END, NETHER)
+		biomeRestrictions = "NETHER,END"
+
+	#Structure Generation
+	[feature_spawns.sand_house]
+		#List of biome types to spawn (default [SANDY], pass empty list for every biome
+		biomes = "SANDY"
 		#Which biome types this structure shouldn't spawn in (default END, NETHER)
 		biomeRestrictions = "NETHER,END"
 
@@ -188,24 +195,6 @@
 		#Range: > 0
 		head_armor = 0
 
-	#Configuration for amethyst armor
-	[armor_config.amethyst_armor]
-		#Armor value for chest piece
-		#Range: > 0
-		chest_armor = 8
-		#Armor value for feet piece
-		#Range: > 0
-		feet_armor = 3
-		#Armor value for legs piece
-		#Range: > 0
-		legs_armor = 6
-		#Toughness for armor made of this material
-		#Range: 0.0 ~ 1.7976931348623157E308
-		toughness = 2.0
-		#Armor value for head piece
-		#Range: > 0
-		head_armor = 3
-
 	#Configuration for lead armor
 	[armor_config.lead_armor]
 		#Armor value for chest piece
@@ -259,6 +248,24 @@
 		#Armor value for head piece
 		#Range: > 0
 		head_armor = 2
+
+	#Configuration for sapphire armor
+	[armor_config.sapphire_armor]
+		#Armor value for chest piece
+		#Range: > 0
+		chest_armor = 8
+		#Armor value for feet piece
+		#Range: > 0
+		feet_armor = 3
+		#Armor value for legs piece
+		#Range: > 0
+		legs_armor = 6
+		#Toughness for armor made of this material
+		#Range: 0.0 ~ 1.7976931348623157E308
+		toughness = 2.0
+		#Armor value for head piece
+		#Range: > 0
+		head_armor = 3
 
 	#Configuration for copper armor
 	[armor_config.copper_armor]
@@ -411,6 +418,43 @@
 		#Chance to spawn (set to 0 to disable).
 		#Range: 0 ~ 256
 		spawnChance = 6
+
+	#Clam spawn config.
+	[mob_spawns.Clam_spawn]
+		#the upper value of initial age for a clam
+		#Range: > 0
+		initialAge = 2300
+		#the chance of a clam spawning as an ender clam [0 to disable ender clams]
+		#Range: > 0
+		enderChance = 31
+		#Min to spawn in a group.
+		#Range: 0 ~ 256
+		min = 1
+		#Max to spawn in a group.
+		#Range: 0 ~ 256
+		max = 1
+		#List of biome types to spawn.
+		biomes = "ocean,river,beach,swamp,wet,"
+		#the max age for a clam
+		#Range: > 0
+		maxAge = 5100
+		#Chance to spawn (set to 0 to disable).
+		#Range: 0 ~ 256
+		spawnChance = 2
+
+	#Duck spawn config.
+	[mob_spawns.Duck_spawn]
+		#Min to spawn in a group.
+		#Range: 0 ~ 256
+		min = 1
+		#Max to spawn in a group.
+		#Range: 0 ~ 256
+		max = 4
+		#List of biome types to spawn.
+		biomes = "wet,swamp,river,beach,"
+		#Chance to spawn (set to 0 to disable).
+		#Range: 0 ~ 256
+		spawnChance = 5
 
 	#Lava Cat spawn config.
 	[mob_spawns."Lava Cat_spawn"]
